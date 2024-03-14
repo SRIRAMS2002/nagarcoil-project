@@ -5,11 +5,12 @@ import {
 const Hero = () => {
   return (
     <div
-      className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8"
+      className="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8 place-content-center place-items-center"
       aria-label="Global"
     >
-      {/* left side */}
-      <div>
+      <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 ">
+   {/* left side */}
+   <div>
         {/* tab */}
         <div className="flex space-x-10">
           <div>
@@ -29,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
         {/* content */}
-        <div className="absolute bg-black w-[18rem] h-[15rem] max-w-none rounded-se-[3rem]  shadow-xl ring-1 ring-gray-400/10 sm:w-[27rem] sm:h-[20rem] mt-5 md:-ml-4 lg:-ml-0">
+        <div className="relative   bg-black w-[18rem] h-[16rem] max-w-none rounded-se-[3rem]  shadow-xl ring-1 ring-gray-400/10 sm:w-[27rem] sm:h-[20rem] mt-5 md:-ml-4 lg:-ml-0">
           <h1 className="relative text-white max-w-sm mx-5 font-bold text-2xl md:leading-10 md:mt-10 mt-5 md:text-[40px]">CREATING BLISSFUL PROPERTY SEARCH IS OUR SPECIALITY</h1>
           <p className="text-white/80 mx-5 text-sm mt-3.5 max-w-sm">with a lot of experience we will help you shortlist the Properties you want</p>
 
@@ -47,7 +48,7 @@ const Hero = () => {
           type="text"
           name="price"
           id="price"
-          className="block w-[16.5rem] sm:w-[30rem] bg-gray-600 h-16 z-10 border-0 py-1.5 pl-10 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+          className="block w-[16.5rem] sm:w-[30rem] bg-gray-200 mt-5 h-12 sm:h-16 z-10 border-0 py-1.5 pl-10 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           placeholder="Search by project,street name, area"
         />
         <div className="absolute inset-y-0 right-0 sm:-right-10 flex items-center">
@@ -64,7 +65,17 @@ const Hero = () => {
     </div>
         </div>
       </div>
+
+      <div className=" hidden sm:flex space-x-40 relative">
+        <img src="/Hero-1.jpg" alt="" className="h-[28.1rem] w-[18rem] absolute inset-0  -left-40 -z-10" />
+        <img src="/Hero-1.jpg" alt="h-[28.1rem]  " />
+      </div>
+      <div>
       
+      </div>
+      </div>
+   
+
     </div>
   );
 };
