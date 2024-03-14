@@ -5,7 +5,7 @@ import {
 const Hero = () => {
   return (
     <div
-      className="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8 place-content-center place-items-center"
+      className="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8 place-content-center place-items-center bg-[url('/Hero-1.jpg')] bg-cover bg-no-repeat sm:bg-none"
       aria-label="Global"
     >
       <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 ">
